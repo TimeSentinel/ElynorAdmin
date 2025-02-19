@@ -24,5 +24,9 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
     },
+      "env": {
+          "browser": true,
+          "node": true
+      },
   },
 )
