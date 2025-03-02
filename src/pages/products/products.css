@@ -2,3 +2,54 @@
 (c)2025 Lance Stubblefield
 elynoradmin: src/pages/products/products.css
 -------------------------------------------- */
+
+@import "tailwindcss";
+
+.productsContainer {
+    .productsNavbar {
+        @apply flex justify-between items-center;
+        @apply bg-yellow-50 border-b-2 border-yellow-300;
+
+        .productsTitle {
+            @apply p-2 text-amber-600;
+        }
+
+        .productsNavcell {
+            @apply w-1/6 font-bold;
+            @apply text-gray-400;
+        }
+
+        .productsNavcell:hover {
+            @apply text-amber-300;
+        }
+    }
+
+    .productsBody {
+        .productsProducts, .productsOptions, .productsCategories {
+            @apply w-full min-h-96 p-1;
+            @apply bg-gray-100;
+        }
+
+        .productsProducts {
+            @apply bg-orange-50 text-orange-800;
+        }
+
+        .productsOptions {
+            @apply bg-purple-50 text-purple-800;
+        }
+
+        .productsCategories {
+            @apply bg-green-50 text-green-800;
+        }
+
+        .divShow {
+            display: block;
+        }
+
+        .divHide {
+            display: none;
+        }
+    }
+}
+
+

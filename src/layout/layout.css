@@ -2,3 +2,31 @@
 (c)2025 Lance Stubblefield
 elynoradmin: src/layout/layout.css
 -------------------------------------------- */
+
+@import "tailwindcss";
+
+
+main {
+    .layoutContainer {
+        @apply w-full h-screen ;
+        @apply bg-gray-200;
+
+        .layoutNavbar {
+            @apply w-full h-24;
+            @apply border-b-2 border-gray-600 bg-gray-300 text-gray-700;
+        }
+
+        .layoutBody {
+
+            .layoutContent {
+                @apply relative w-11/12 mx-auto min-h-96 mt-2 p-1;
+                @apply bg-gray-100 border-2 border-gray-500;
+            }
+        }
+
+        .layoutFooter {
+            @apply fixed bottom-0 w-full h-12 pt-1;
+            @apply bg-gray-500 border-t-2 border-gray-950;
+        }
+    }
+}

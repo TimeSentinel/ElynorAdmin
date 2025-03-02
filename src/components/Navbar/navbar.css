@@ -2,3 +2,47 @@
 (c)2025 Lance Stubblefield
 elynoradmin: src/components/Navbar/navbar.css
 -------------------------------------------- */
+
+@import "tailwindcss";
+
+.navbarContainer {
+    @apply w-full h-full p-2;
+
+    .navbarTop {
+        @apply w-full h-14;
+        @apply text-xl font-bold;
+        button{
+            @apply cursor-pointer;
+        }
+        button:hover {
+            @apply ml-2 text-yellow-400;
+            transform: scale(1.1);
+        }
+    }
+
+    .navbarMenu {
+        @apply flex justify-around items-center;
+
+        .navbarCell {
+            @apply w-1/7;
+
+            .enabled, .active, .active:hover {
+                @apply w-full text-center align-middle cursor-pointer p-0.5;
+                @apply font-medium text-sm leading-tight overflow-hidden rounded-lg;
+            }
+            .enabled {
+                @apply bg-gray-200 text-gray-600 border-2 border-gray-400 shadow-gray-400 shadow-md;
+            }
+            .enabled:hover {
+                @apply bg-white border-gray-700 shadow-lg shadow-yellow-100 text-yellow-400;
+                transform: scale(1.05);
+            }
+            .active, .active:hover {
+                @apply bg-yellow-200 border-2 border-gray-500 shadow-gray-500 shadow-inner;
+                transform: scale(.95);
+            }
+
+        }
+    }
+}
+

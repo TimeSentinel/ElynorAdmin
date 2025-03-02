@@ -19,7 +19,6 @@ const Layout = ({children}: Props) => {
             <div className="layoutContainer">
                 <div className="layoutNavbar"><Navbar/></div>
                 <div className="layoutBody">
-                    Layout
                     <div className="layoutContent">
                         <section>
                             {children}

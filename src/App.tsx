@@ -11,13 +11,14 @@ import ProductsPage from "./pages/products";
 import ThemesPage from "./pages/themes";
 import AdminPage from "./pages/admin";
 import NewsPage from "./pages/news";
+import GalleryPage from "./pages/gallery";
 
 function App() {
 
     return (
         <div className="App">
 
-            AppTSX
+
             <Toaster reverseOrder={true}/>
 
             <Layout>
@@ -29,6 +30,7 @@ function App() {
                     {/*<Route path='products/cats' element={<ProductsPage/>}/>*/}
                     <Route path='themes' element={<ThemesPage/>}/>
                     <Route path='news' element={<NewsPage/>}/>
+                    <Route path='gallery' element={<GalleryPage/>}/>
                     <Route path='admin' element={<AdminPage/>}/>
                 </Routes>
             </Layout>
