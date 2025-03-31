@@ -12,15 +12,20 @@ import ThemesPage from "./pages/themes";
 import AdminPage from "./pages/admin";
 import NewsPage from "./pages/news";
 import GalleryPage from "./pages/gallery";
+import Auth from './Auth';
+
+const loggedIn = localStorage.getItem('token');
+// const loggedIn = true;
+console.log("token: ", loggedIn);
+
 
 function App() {
 
     return (
         <div className="App">
 
-
             <Toaster reverseOrder={true}/>
-
+            {loggedIn ? (
             <Layout>
                 <Routes>
                     <Route path='/' element={<HomePage/>}/>
@@ -34,7 +39,7 @@ function App() {
                     <Route path='admin' element={<AdminPage/>}/>
                 </Routes>
             </Layout>
-
+            ) : <Auth /> }
         </div>
     )
 }

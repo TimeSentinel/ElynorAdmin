@@ -1,0 +1,39 @@
+/* -------------------------------------------
+(c)2025 Lance Stubblefield
+elynoradmin: src/auth.css
+-------------------------------------------- */
+
+@import "tailwindcss";
+
+body {
+    @apply bg-gray-300 mt-15 text-center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .auth {
+        width: 360px;
+        @apply mx-auto;
+        @apply p-6 border-2 border-gray-400 rounded-md;
+        @apply shadow-md shadow-gray-500;
+
+        label {
+            @apply text-gray-600 font-bold;
+        }
+
+        input {
+            @apply w-48 h-8 m-2 p-2 bg-gray-100 text-sm font-medium text-gray-600;
+            @apply shadow-inner shadow-gray-400;
+            @apply border-2 border-gray-300 rounded-md;
+        }
+
+        button {
+            @apply mt-4 p-2 w-28 bg-gray-100 text-sm font-medium text-gray-600;
+            @apply rounded-lg shadow-md shadow-gray-400;
+        }
+
+        button:hover {
+            @apply bg-blue-300 font-bold;
+            @apply shadow-lg;
+            transform: scale(1.2);
+        }
+    }
+}
